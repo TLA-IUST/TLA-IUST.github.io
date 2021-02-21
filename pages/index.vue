@@ -88,6 +88,12 @@
   const AMIR_ALI_PAKDAMAN = require('../static/images/amirali.jpg');
   const YASAMIN_MADANI = require('../static/images/yasamin.jpg');
 
+  // Resources Covers
+  const PETER_LINZ = require('../static/images/Peter Linz.jpg');
+  const MICHAEL_SIPSER = require('../static/images/Michael Sipser.jpg');
+  const FILE_PETER_LINZ = '/_nuxt/static/references/Peter Linz - An Introduction to Formal Languages and Automata [6th ed.]-Jones _ Bartlett (2017).pdf';
+  const FILE_MICHAEL_SIPSER = '/_nuxt/static/references/Michael Sipser - Introduction to the Theory of Computation (2012, Thomson South-Western).pdf';
+
   export default {
     computed: {
       HOME_PAGE: () => HOME_PAGE,
@@ -313,37 +319,39 @@
       materials: {
         main: [
           {
-            name: "Reference 1",
-            description: "This book is Reference 1",
-            cover: REF_BOOK_1,
+            name: "An Introduction to Formal Languages and Automata",
+            description: "",
+            cover: PETER_LINZ,
+            file: FILE_PETER_LINZ
           },
           {
-            name: "Reference 2",
-            description: "This book is Reference 2",
-            cover: REF_BOOK_2,
+            name: "Introduction to the Theory of Computation",
+            description: "",
+            cover: MICHAEL_SIPSER,
+            file: FILE_MICHAEL_SIPSER
           }
         ],
         additional: [
-          {
-            name: "Reference 1",
-            description: "This book is Reference 1",
-            cover: REF_BOOK_2,
-          },
-          {
-            name: "Reference 2",
-            description: "This book is Reference 2",
-            cover: REF_BOOK_1,
-          },
-          {
-            name: "Reference 3",
-            description: "This book is Reference 3",
-            cover: REF_BOOK_2,
-          },
-          {
-            name: "Reference 4",
-            description: "This book is Reference 4",
-            cover: REF_BOOK_1,
-          }
+          // {
+          //   name: "Reference 1",
+          //   description: "This book is Reference 1",
+          //   cover: REF_BOOK_2,
+          // },
+          // {
+          //   name: "Reference 2",
+          //   description: "This book is Reference 2",
+          //   cover: REF_BOOK_1,
+          // },
+          // {
+          //   name: "Reference 3",
+          //   description: "This book is Reference 3",
+          //   cover: REF_BOOK_2,
+          // },
+          // {
+          //   name: "Reference 4",
+          //   description: "This book is Reference 4",
+          //   cover: REF_BOOK_1,
+          // }
         ]
       }
     }),

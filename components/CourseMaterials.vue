@@ -2,14 +2,14 @@
   <v-row justify="center" align="center" class="mt-4">
     <v-col cols="1"/>
     <v-col cols="10" class="justify-center">
-      <div :class="`${textSize.title}`">Main Book</div>
+      <div :class="`${textSize.title}`">Main Resources</div>
       <v-row class="my-4">
         <v-col
           v-for="(material, index) in materials.main"
           :key="index"
           :cols="materialsColumns">
           <v-card>
-            <v-img :src="material.cover"/>
+            <v-img :src="material.cover" max-height="400"/>
             <v-card-title>{{material.name}}</v-card-title>
             <v-card-text>
               <div>{{material.description}}</div>
@@ -17,7 +17,7 @@
             <v-card-actions>
               <v-spacer/>
               <v-btn text>
-                <v-icon class="mr-2" color="green">mdi-download</v-icon>
+                <v-icon class="mr-2" color="green" :href="material.file" >mdi-download</v-icon>
                 Download
               </v-btn>
             </v-card-actions>
