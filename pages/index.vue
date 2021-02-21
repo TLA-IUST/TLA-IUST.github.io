@@ -3,32 +3,34 @@
     <v-col lg="1" xl="1" cols="0"/>
     <v-col lg="10" xl="10" cols="12" class="justify-center">
 
-      <div class="pa-5">
-        <div :class="`text-center ${textSize.courseTitle} pa-2`">{{course.title}}</div>
-        <div :class="`text-center ${textSize.courseDescription} blue-grey--text mt-4`">{{course.subtitle}}</div>
+      <div class="yellow lighten-3 elevation-6 pa-2">
+        <div class="pa-5">
+          <div class="d-flex align-center justify-center">
+            <v-img :src="LOGO" max-width="100"/>
+          </div>
+          <div :class="`text-center ${textSize.courseTitle} pa-2`">{{course.title}}</div>
+        </div>
+
+
+        <div v-if="isMainMenuVisible"
+             class="d-flex align-center justify-center">
+
+          <v-btn
+            v-for="(item, index) in menu"
+            :key="index"
+            color="black"
+            v-ripple="{ class: `light-blue--text` }"
+            :style="page===item.pageName ? 'background-color: #B3E5FC' : ''"
+            @click="page=item.pageName"
+            tile
+            text
+            large>
+            {{item.text}}
+            <v-icon class="ml-2">{{item.icon}}</v-icon>
+          </v-btn>
+
+        </div>
       </div>
-
-
-      <div v-if="isMainMenuVisible"
-           class="d-flex align-center justify-center">
-
-        <v-btn
-          v-for="(item, index) in menu"
-          :key="index"
-          color="black"
-          v-ripple="{ class: `light-blue--text` }"
-          :style="page===item.pageName ? 'background-color: #B3E5FC' : ''"
-          @click="page=item.pageName"
-          tile
-          text
-          large>
-          {{item.text}}
-        </v-btn>
-
-      </div>
-
-
-      <v-divider/>
 
       <div class="pa-2">
         <about v-show="page===HOME_PAGE" :people="people" :course-description="course.description"/>
@@ -71,10 +73,20 @@
   const PROJECT_PAGE = 'projects';
   const COURSE_MATERIAL_PAGE = 'materials';
 
+  // Site Images
+  const LOGO = require('../static/images/iust.png');
+
+  // Profile images
   const MALE_PROFILE = require('../static/images/profile-boy.jpg');
   const FEMALE_PROFILE = require('../static/images/profile-girl.jpg');
-  const REF_BOOK_1 = require('../static/images/ref_book1.jpg');
-  const REF_BOOK_2 = require('../static/images/ref_book2.jpg');
+  const REZA_ENTEZARI = require('../static/images/Entezari.jpg');
+  const DANI_BAZI = require('../static/images/danial.jpg');
+  const ALI_SEDGHI = require('../static/images/ali.jpg');
+  const AMIN_GHASVARI = require('../static/images/amin.png');
+  const ARMAN_HEYDARI = require('../static/images/arman.jpg');
+  const ZAHRA_HOSSEINI = require('../static/images/zahra.jpg');
+  const AMIR_ALI_PAKDAMAN = require('../static/images/amirali.jpg');
+  const YASAMIN_MADANI = require('../static/images/yasamin.jpg');
 
   export default {
     computed: {
@@ -83,6 +95,8 @@
       ASSIGNMENT_PAGE: () => ASSIGNMENT_PAGE,
       PROJECT_PAGE: () => PROJECT_PAGE,
       COURSE_MATERIAL_PAGE: () => COURSE_MATERIAL_PAGE,
+      // Images
+      LOGO: () => LOGO,
       isMainMenuVisible() {
         switch (this.$vuetify.breakpoint.name) {
           case 'xs':
@@ -111,17 +125,17 @@
             };
           case 'md':
             return {
-              courseTitle: 'text-h1',
+              courseTitle: 'text-h2',
               courseDescription: 'text-h4',
             };
           case 'lg':
             return {
-              courseTitle: 'text-h1',
+              courseTitle: 'text-h2',
               courseDescription: 'text-h4',
             };
           case 'xl':
             return {
-              courseTitle: 'text-h1',
+              courseTitle: 'text-h2',
               courseDescription: 'text-h4',
             };
         }
@@ -142,22 +156,27 @@
         {
           pageName: HOME_PAGE,
           text: "Home",
+          icon: 'mdi-home'
         },
         {
           pageName: SCHEDULE_PAGE,
           text: "Schedule",
+          icon: 'mdi-calendar'
         },
         {
           pageName: ASSIGNMENT_PAGE,
           text: "Assignments",
+          icon: 'mdi-book-open'
         },
         {
           pageName: PROJECT_PAGE,
           text: "Projects",
+          icon: 'mdi-rocket'
         },
         {
           pageName: COURSE_MATERIAL_PAGE,
           text: "Resources",
+          icon: 'mdi-book'
         },
       ],
 
@@ -189,90 +208,87 @@
       schedule: {
         events: [
           {
-            name: 'Event 1',
-            start: '2021-02-01 9:00',
-            end: '2021-02-09 9:00',
+            name: 'Introduction',
+            start: '2021-02-25 18:00',
+            end: '2021-02-25 20:00',
             color: 'red'
           },
-          {
-            name: 'Event 2',
-            start: '2021-02-09 12:30',
-            end: '2021-02-19 15:30',
-            color: 'indigo'
-          },
-          {
-            name: 'Event 3',
-            start: '2021-02-09 12:30',
-            end: '2021-02-15 15:30',
-            color: 'green'
-          },
-          {
-            name: 'Event 4',
-            start: '2021-02-20 12:30',
-            end: '2021-02-24 15:30',
-            color: 'blue'
-          },
+          // {
+          //   name: 'Introduction',
+          //   start: '2021-02-01 9:00',
+          //   end: '2021-02-09 9:00',
+          //   color: 'red'
+          // },
+          // {
+          //   name: 'Introduction',
+          //   start: '2021-02-01 9:00',
+          //   end: '2021-02-09 9:00',
+          //   color: 'red'
+          // },
         ]
       },
 
       // Assignments
       assignments: [
-        {
-          name: "Assignment number 1",
-          file: ''
-        },
-        {
-          name: "Assignment number 2",
-          file: ''
-        },
-        {
-          name: "Assignment number 3",
-          file: ''
-        },
-        {
-          name: "Assignment number 4",
-          file: ''
-        },
-        {
-          name: "Assignment number 5",
-          file: ''
-        }
+        // {
+        //   name: "Assignment number 1",
+        //   file: ''
+        // },
+        // {
+        //   name: "Assignment number 2",
+        //   file: ''
+        // },
+        // {
+        //   name: "Assignment number 3",
+        //   file: ''
+        // },
+        // {
+        //   name: "Assignment number 4",
+        //   file: ''
+        // },
+        // {
+        //   name: "Assignment number 5",
+        //   file: ''
+        // }
       ],
 
       // Projects
       projects: [
-        {
-          name: "Project number 1",
-          file: ''
-        },
-        {
-          name: "Project number 2",
-          file: ''
-        },
-        {
-          name: "Project number 3",
-          file: ''
-        }
+        // {
+        //   name: "Project number 1",
+        //   file: ''
+        // },
+        // {
+        //   name: "Project number 2",
+        //   file: ''
+        // },
+        // {
+        //   name: "Project number 3",
+        //   file: ''
+        // }
       ],
 
       // Characters
       people: {
         professor: {
           name: "M.Reza Entezari",
-          image: MALE_PROFILE
+          image: REZA_ENTEZARI
         },
         assistants: [
           {
+            name: "Danial Bazmande",
+            image: DANI_BAZI
+          }, {
             name: "Arman Heydari",
-            image: MALE_PROFILE
+            image: ARMAN_HEYDARI
           },
           {
             name: "M.Amin Ghasvari",
-            image: MALE_PROFILE
+            image: AMIN_GHASVARI
           },
           {
             name: "Ali Sedaghi",
-            image: MALE_PROFILE
+            image: ALI_SEDGHI
           },
           {
             name: "Mahsa Ghaderan",
@@ -280,19 +296,15 @@
           },
           {
             name: "Zahra Hosseini",
-            image: FEMALE_PROFILE
-          },
-          {
-            name: "Danial Bazmande",
-            image: MALE_PROFILE
+            image: ZAHRA_HOSSEINI
           },
           {
             name: "Yasamin Madani",
-            image: FEMALE_PROFILE
+            image: YASAMIN_MADANI
           },
           {
-            name: "Amir Ali Pak",
-            image: MALE_PROFILE
+            name: "Amir Ali Pakdaman",
+            image: AMIR_ALI_PAKDAMAN
           },
         ],
       },
