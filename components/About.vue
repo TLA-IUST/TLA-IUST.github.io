@@ -10,17 +10,16 @@
         <strong>Announcements:</strong>
         <br style="clear: both">
         <ul>
-          <li>Announcement 1</li>
-          <li>Announcement 2</li>
-          <li>Announcement 3</li>
+          <li>Welcome !!</li>
+<!--          <li>Announcement 2</li>-->
+<!--          <li>Announcement 3</li>-->
         </ul>
       </v-alert>
 
       <div class="mt-6">
         <div class="text-h5">Course Description</div>
-        <div class="mt-2 text-body-1">In higher education in various countries, such as Canada, Israel, Nigeria and
-          the United States, a course is a unit of teaching that typically lasts one academic term, is led by one or
-          more instructors, and has a fixed roster of students. A course usually covers an individual subject.
+        <div class="mt-2 text-body-1">
+          {{courseDescription}}
         </div>
       </div>
 
@@ -35,6 +34,7 @@
               class="rounded-circle"
               :width="(this.$vuetify.breakpoint.name==='xs') ? '100%' : '75%'"
               :src="people.professor.image"
+              aspect-ratio="1"
               :alt="people.professor.name"/>
           </div>
           <div :class="`mt-2 text-center ${textSize.characters}`">
@@ -52,6 +52,7 @@
                 <v-img
                   class="rounded-circle"
                   width="100%"
+                  aspect-ratio="1"
                   :src="ta.image"
                   :alt="ta.name"/>
               </div>
@@ -123,7 +124,7 @@
         }
       }
     },
-    props: ['people']
+    props: ['people', 'courseDescription']
   }
 </script>
 
