@@ -16,8 +16,8 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer/>
-              <v-btn text>
-                <v-icon class="mr-2" color="green" :href="material.file" >mdi-download</v-icon>
+              <v-btn text :href="material.file">
+                <v-icon class="mr-2" color="green" >mdi-download</v-icon>
                 Download
               </v-btn>
             </v-card-actions>

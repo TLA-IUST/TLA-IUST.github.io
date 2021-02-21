@@ -91,8 +91,8 @@
   // Resources Covers
   const PETER_LINZ = require('../static/images/Peter Linz.jpg');
   const MICHAEL_SIPSER = require('../static/images/Michael Sipser.jpg');
-  const FILE_PETER_LINZ = '/_nuxt/static/references/Peter Linz - An Introduction to Formal Languages and Automata [6th ed.]-Jones _ Bartlett (2017).pdf';
-  const FILE_MICHAEL_SIPSER = '/_nuxt/static/references/Michael Sipser - Introduction to the Theory of Computation (2012, Thomson South-Western).pdf';
+  const FILE_PETER_LINZ = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/references/Peter%20Linz%20-%20An%20Introduction%20to%20Formal%20Languages%20and%20Automata%20%5B6th%20ed.%5D-Jones%20_%20Bartlett%20(2017).pdf';
+  const FILE_MICHAEL_SIPSER = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/references/Michael%20Sipser%20-%20Introduction%20to%20the%20Theory%20of%20Computation%20(2012%2C%20Thomson%20South-Western).pdf';
 
   export default {
     computed: {
