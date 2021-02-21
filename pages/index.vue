@@ -277,12 +277,12 @@
       // Characters
       people: {
         professor: {
-          name: "M.Reza Entezari",
+          name: "Reza Entezari Maleki",
           image: REZA_ENTEZARI
         },
         assistants: [
           {
-            name: "Danial Bazmande",
+            name: "Danial Bazmandeh",
             image: DANI_BAZI
           }, {
             name: "Arman Heydari",

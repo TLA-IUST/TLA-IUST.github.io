@@ -76,23 +76,23 @@
         switch (this.$vuetify.breakpoint.name) {
           case 'xs':
             return {
-              title: 'text-body-1',
+              title: 'text-h6',
             };
           case 'sm':
             return {
-              title: 'text-body-1',
+              title: 'text-h6',
             };
           case 'md':
             return {
-              title: 'text-h4',
+              title: 'text-h5',
             };
           case 'lg':
             return {
-              title: 'text-h4',
+              title: 'text-h5',
             };
           case 'xl':
             return {
-              title: 'text-h4',
+              title: 'text-h5',
             };
         }
       }
