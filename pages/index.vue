@@ -87,6 +87,7 @@
   const ZAHRA_HOSSEINI = require('../static/images/zahra.jpg');
   const AMIR_ALI_PAKDAMAN = require('../static/images/amirali.jpg');
   const YASAMIN_MADANI = require('../static/images/yasamin.jpg');
+  const MAHSA_GHADERAN = require('../static/images/mahsa.jpg');
 
   // Resources Covers
   const PETER_LINZ = require('../static/images/Peter Linz.jpg');
@@ -298,7 +299,7 @@
           },
           {
             name: "Mahsa Ghaderan",
-            image: FEMALE_PROFILE
+            image: MAHSA_GHADERAN
           },
           {
             name: "Zahra Hosseini",
