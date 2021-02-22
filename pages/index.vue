@@ -42,7 +42,6 @@
 
       <div v-if="!isMainMenuVisible" class="bottom-nav">
         <v-bottom-navigation
-          v-model="value"
           color="blue">
 
           <v-btn v-for="(item, index) in bottomNavigationMenu" :key="index" @click="page=item.pageName">
@@ -150,7 +149,7 @@
     },
     data: () => ({
       page: HOME_PAGE,
-      value: -1,
+
       // Course Details
       course: {
         title: "Automata Theory",
