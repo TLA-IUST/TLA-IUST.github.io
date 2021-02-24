@@ -9,13 +9,9 @@
           :key="index"
           :cols="materialsColumns">
           <v-card
-          height="600">
-            <v-img :src="material.cover" height="400"/>
-            <v-card-title>{{material.name}}</v-card-title>
-            <v-card-text>
-              <div>{{material.description}}</div>
-            </v-card-text>
-            <v-card-actions>
+          height="500">
+            <v-img :src="material.cover" height="430"/>
+            <v-card-actions class="mt-2">
               <v-spacer/>
               <v-btn text :href="material.file">
                 <v-icon class="mr-2" color="green" >mdi-download</v-icon>
@@ -27,7 +23,7 @@
       </v-row>
 
 
-      <div :class="`${textSize.title} mt-8`">Additional Resources</div>
+<!--      <div :class="`${textSize.title} mt-8`">Additional Resources</div>-->
       <v-row class="my-4">
         <v-col
           v-for="(material, index) in materials.additional"
@@ -68,7 +64,7 @@
           case 'md':
             return 6;
           case 'lg':
-            return 6;
+            return 5;
           case 'xl':
             return 4;
         }
