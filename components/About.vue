@@ -29,7 +29,7 @@
         <v-col :cols="12-columns.assistants-columns.distance" class="justify-center">
           <div :class="`${textSize.charactersTitle} ${textSize.charactersTitleAlign}`">Instructor</div>
           <div
-            class="pa-4 d-flex flex-column align-center justify-center">
+            class="pa-2 d-flex flex-column align-center justify-center">
             <v-img
               class="rounded-circle"
               width="100%"
