@@ -1,0 +1,52 @@
+{
+  "name": "Automata Course",
+  "short_name": "Automata Course",
+  "icons": [
+    {
+      "src": "/course-template/_nuxt/icons/icon_64x64.62772e.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_120x120.62772e.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_144x144.62772e.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_152x152.62772e.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_192x192.62772e.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_384x384.62772e.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/course-template/_nuxt/icons/icon_512x512.62772e.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/course-template/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
