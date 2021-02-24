@@ -43,10 +43,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/pwa',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  pwa: {
+    meta: {
+      title: 'Automata Course',
+      author: 'Amin-MAG',
+    },
+    manifest: {
+      name: 'Automata Course',
+      short_name: 'Automata Course',
+      lang: 'en',
+    },
+  },
+
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
