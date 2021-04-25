@@ -95,12 +95,12 @@
   const FILE_MICHAEL_SIPSER = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/references/Michael%20Sipser%20-%20Introduction%20to%20the%20Theory%20of%20Computation%20(2012%2C%20Thomson%20South-Western).pdf';
 
   // Assignments files
-  const HW1_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW1.pdf';
-  const HW2_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW2.pdf';
-  const HW3_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW3.pdf';
-  const HW4_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW4.pdf';
+  const HW1_FILE = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/files/TLA_HW1.pdf';
+  const HW2_FILE = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/files/TLA_HW2.pdf';
+  const HW3_FILE = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/files/TLA_HW3.pdf';
+  const HW4_FILE = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/files/TLA_HW4.pdf';
 
-  const P1_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_P1.pdf';
+  const P1_FILE = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/files/TLA_P1.pdf';
 
 
 
