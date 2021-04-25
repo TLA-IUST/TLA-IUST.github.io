@@ -94,6 +94,16 @@
   const FILE_PETER_LINZ = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/references/Peter%20Linz%20-%20An%20Introduction%20to%20Formal%20Languages%20and%20Automata%20%5B6th%20ed.%5D-Jones%20_%20Bartlett%20(2017).pdf';
   const FILE_MICHAEL_SIPSER = 'https://github.com/TLA-IUST/TLA-IUST.github.io/blob/master/static/references/Michael%20Sipser%20-%20Introduction%20to%20the%20Theory%20of%20Computation%20(2012%2C%20Thomson%20South-Western).pdf';
 
+  // Assignments files
+  const HW1_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW1.pdf';
+  const HW2_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW2.pdf';
+  const HW3_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW3.pdf';
+  const HW4_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_HW4.pdf';
+
+  const P1_FILE = 'https://github.com/DA-IUST/DA-IUST.github.io/blob/master/static/files/TLA_P1.pdf';
+
+
+
   export default {
     computed: {
       HOME_PAGE: () => HOME_PAGE,
@@ -236,22 +246,22 @@
 
       // Assignments
       assignments: [
-        // {
-        //   name: "Assignment number 1",
-        //   file: ''
-        // },
-        // {
-        //   name: "Assignment number 2",
-        //   file: ''
-        // },
-        // {
-        //   name: "Assignment number 3",
-        //   file: ''
-        // },
-        // {
-        //   name: "Assignment number 4",
-        //   file: ''
-        // },
+        {
+          name: "Assignment 1",
+          file: HW1_FILE
+        },
+        {
+          name: "Assignment 2",
+          file: HW2_FILE
+        },
+        {
+          name: "Assignment 3",
+          file: HW3_FILE
+        },
+        {
+          name: "Assignment 4",
+          file: HW4_FILE
+        }
         // {
         //   name: "Assignment number 5",
         //   file: ''
@@ -260,10 +270,10 @@
 
       // Projects
       projects: [
-        // {
-        //   name: "Project number 1",
-        //   file: ''
-        // },
+        {
+          name: "Project 1",
+          file: P1_FILE
+        }
         // {
         //   name: "Project number 2",
         //   file: ''
